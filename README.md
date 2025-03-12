@@ -45,6 +45,14 @@ Update application.properties:
             GET	         http://localhost:8080/employees/{ID Name}            geeting only Partial data with EMPLOYEE-only access             EMPLOYEE
 
 
+| Method | Endpoint       | Description         | Role Required |
+|--------|----------------|---------------------|--------------|
+| `POST`  | `/auth/login`   | Login user           | -            |
+| `POST`  | `/auth/register`| Register user        | -            |
+| `GET`   | `/admin/data`   | Admin-only access     | `ADMIN`       |
+| `GET`   | `/user/data`    | User-only access      | `USER`        |
+
+
 # Technologies Used
 * Spring Boot
 * Spring Security
