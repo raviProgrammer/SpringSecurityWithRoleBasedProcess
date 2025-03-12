@@ -17,6 +17,12 @@ Ensure you have the following installed:
 * Spring data JPA driver
 * Maven (for dependency management)
 
+# Technologies Used
+* Spring Boot
+* Spring Security
+* Spring Data JPA
+* PostgreSQL
+
 # Setup
 1. **Clone the repository**
 
@@ -42,8 +48,3 @@ Update application.properties:
 | `GET`  | `http://localhost:8080/employees/all`| getting all data with HR and MANAGER access | `HR and MANAGER` |
 | `GET`   | `http://localhost:8080/employees/{ID Name}` | getting partial data with EMPLOYEE-only access | `EMPLOYEE` |
 
-# Technologies Used
-* Spring Boot
-* Spring Security
-* Spring Data JPA
-* PostgreSQL
