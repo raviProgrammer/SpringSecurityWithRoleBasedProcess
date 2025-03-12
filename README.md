@@ -36,22 +36,11 @@ Update application.properties:
    
 # Endpoints
 
-            Method	                   Endpoint	                                         Description	                                   Role Required
-            
-            POST	       http://localhost:8080/employees/create	              Employee Register with HR-only access                            HR
-            
-            GET	         http://localhost:8080/employees/all	                getting all data with HR and MANAGER access                  HR and MANAGER                               
-            
-            GET	         http://localhost:8080/employees/{ID Name}            geeting only Partial data with EMPLOYEE-only access             EMPLOYEE
-
-
 | Method | Endpoint       | Description         | Role Required |
 |--------|----------------|---------------------|--------------|
-| `POST`  | `/auth/login`   | Login user           | -            |
-| `POST`  | `/auth/register`| Register user        | -            |
-| `GET`   | `/admin/data`   | Admin-only access     | `ADMIN`       |
-| `GET`   | `/user/data`    | User-only access      | `USER`        |
-
+| `POST`  | `http://localhost:8080/employees/create`   | Employee Register with HR-only access  | `HR`  |
+| `GET`  | `http://localhost:8080/employees/all`| getting all data with HR and MANAGER access | `HR and MANAGER` |
+| `GET`   | `http://localhost:8080/employees/{ID Name}` | http://localhost:8080/employees/{ID Name} | `EMPLOYEE` |
 
 # Technologies Used
 * Spring Boot
