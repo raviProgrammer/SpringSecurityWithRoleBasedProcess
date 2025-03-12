@@ -47,9 +47,3 @@ Update application.properties:
 * Spring Security
 * Spring Data JPA
 * PostgreSQL
-
-# Contributing
-* Fork the repository
-* Create a new branch (feature/your-feature)
-* Commit your changes with a descriptive message
-* Create a pull request
