@@ -40,7 +40,7 @@ Update application.properties:
 |--------|----------------|---------------------|--------------|
 | `POST`  | `http://localhost:8080/employees/create`   | Employee Register with HR-only access  | `HR`  |
 | `GET`  | `http://localhost:8080/employees/all`| getting all data with HR and MANAGER access | `HR and MANAGER` |
-| `GET`   | `http://localhost:8080/employees/{ID Name}` | http://localhost:8080/employees/{ID Name} | `EMPLOYEE` |
+| `GET`   | `http://localhost:8080/employees/{ID Name}` | getting partial data with EMPLOYEE-only access | `EMPLOYEE` |
 
 # Technologies Used
 * Spring Boot
